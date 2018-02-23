@@ -286,7 +286,12 @@ Coverage. Image
 .
 ![test](test =50%)
 .
-<p><img src="test" alt="test" width="50%" height="50%"></p>
+<p><img src="test" alt="test" width="50%"></p>
+.
+.
+![test](test =50)
+.
+<p><img src="test" alt="test" width="50"></p>
 .
 .
 ![test](test =fill)
