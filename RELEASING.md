@@ -17,15 +17,14 @@ git commit -m "Bump version"
 * Add git tag.
 
 ```
-git tag 63.12.0+cos1
+git tag v63.12.0+cos1
 ```
 
 
 * Push to GitHub.
 
 ```
-git push
-git push --tags
+git push --tags origin cos
 ```
 
 * Publish to npm.
