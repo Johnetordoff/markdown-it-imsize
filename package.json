@@ -1,6 +1,6 @@
 {
-  "name": "markdown-it-imsize",
-  "version": "2.0.1",
+  "name": "@centerforopenscience/markdown-it-imsize",
+  "version": "2.0.1+cos1",
   "description": "Markdown-it plugin to specify image size",
   "main": "lib/index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tatsy/markdown-it-imsize"
+    "url": "https://github.com/cos-forks/markdown-it-imsize"
   },
   "author": "tatsy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tatsy/markdown-it-imsize/issues"
+    "url": "https://github.com/cos-forks/markdown-it-imsize/issues"
   },
-  "homepage": "https://github.com/tatsy/markdown-it-imsize",
+  "homepage": "https://github.com/cos-forks/markdown-it-imsize",
   "keywords": [
     "markdown-it",
     "markdown-it-plugin"
