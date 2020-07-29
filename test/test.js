@@ -23,6 +23,27 @@ describe('markdown-it-imsize (autofill)', function() {
   generate(path.join(__dirname, 'fixtures/markdown-it-imsize/autofill.txt'), md);
 });
 
+describe('markdown-it-imsize (chained)', function() {
+  var md = require('markdown-it')({
+    html: true,
+    linkify: true,
+    typography: true
+  }).use(
+    require('../lib')
+  ).use(
+    function(md, config) {
+      md.renderer.rules.image = function (tokens, idx, _options, _env, _self) {
+        var token = tokens[idx];
+        assert.equal(token.content, 'test alt value')
+      }
+    }
+  );
+
+  it('preserves token content', function() {
+    md.render('![test alt value](https://image.com/image.png)')
+  });
+});
+
 describe('image size detector', function() {
   var imsize = require('../lib/imsize');
   var types = require('../lib/imsize/types');
